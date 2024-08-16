@@ -13,16 +13,15 @@ HOMEBREW_NO_AUTO_UPDATE=1 brew install llvm imagemagick
 HOMEBREW_NO_AUTO_UPDATE=1 brew install koekeishiya/formulae/yabai
 HOMEBREW_NO_AUTO_UPDATE=1 brew install jwbargsten/misc/defbro
 
-# grep -Ei 'error|failed' | while read i; do
-   # echo "failed to set up astra: dependency installation error"
-  #  exit
-# done
-
    echo      
    echo "--> build m1n1"
    git clone --recursive https://github.com/AsahiLinux/m1n1.git
    cd m1n1
    make
+
+   grep -Ei 'error|failed' | while read i; do
+   echo "failed to install astra: error building m1n1"
+   exit
                             
 git clone https://github.com/satomiify/astra
 # sh ~/astra/conf.sh
