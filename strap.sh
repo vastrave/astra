@@ -13,6 +13,6 @@ git clone https://github.com/satomiify/astra
 # sh ~/astra/conf.sh
 echo             
 echo "astra has finished setup."
-echo "Some changes require a reboot, and astra will reboot automatically in 10 seconds (press Ctrl-Z to prevent this)"
+echo "Some changes require a reboot. The system will reboot automatically in 10s (press Ctrl-Z to stop)"
 sleep 10
 reboot
