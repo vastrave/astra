@@ -13,10 +13,10 @@ HOMEBREW_NO_AUTO_UPDATE=1 brew install llvm imagemagick
 HOMEBREW_NO_AUTO_UPDATE=1 brew install koekeishiya/formulae/yabai
 HOMEBREW_NO_AUTO_UPDATE=1 brew install jwbargsten/misc/defbro
 
-grep -Ei 'error|failed' | while read i; do
-   echo "failed to set up astra: dependency installation error"
-   exit
-done
+# grep -Ei 'error|failed' | while read i; do
+   # echo "failed to set up astra: dependency installation error"
+  #  exit
+# done
 
    echo      
    echo "--> build m1n1"
