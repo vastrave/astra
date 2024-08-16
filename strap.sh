@@ -10,7 +10,7 @@ HOMEBREW_NO_AUTO_UPDATE=1 brew install koekeishiya/formulae/yabai
                             # git clone --recursive https://github.com/AsahiLinux/m1n1.git
                             # make
 git clone https://github.com/satomiify/astra
-sh ~/astra/conf.sh
+# sh ~/astra/conf.sh
 echo             
 echo "astra has finished setup."
 echo "Some changes require a reboot, and astra will reboot automatically in 10 seconds (press Ctrl-Z to prevent this)"
