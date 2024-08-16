@@ -17,9 +17,21 @@ defaults write com.apple.dock single-app -bool true
 defaults write com.apple.dock orientation right
 defaults write com.apple.dock autohide-delay -float 0.1
 defaults write com.apple.dock autohide-time-modifier -float 0.8
+defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
+# defaults write com.apple.dock largesize -float 128
 
 # apps
+
+# -- x/twitter
+defaults write com.twitter.twitter-mac TypeAnywhereToTweet -bool true
+defaults write com.twitter.twitter-mac openLinksInBackground -bool true
+defaults write com.twitter.twitter-mac ESCClosesComposeWindow -bool true
+defaults write com.twitter.twitter-mac UserTimelineDerepeater -bool true
+
+# -- finder
 defaults write com.apple.finder QuitMenuItem -bool true; killall Finder
+
+# -- app store
 defaults write com.apple.appstore ShowDebugMenu -bool true
 
 killall Dock
