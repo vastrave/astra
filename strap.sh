@@ -15,6 +15,7 @@ HOMEBREW_NO_AUTO_UPDATE=1 brew install jwbargsten/misc/defbro
 
 grep -Ei 'error|failed' | sed 's/.* //g' | while read i; do
    echo "failed to set up astra: dependency installation error"
+   exit
 done
 
    echo      
@@ -30,6 +31,16 @@ touch ~/astra/temp.sh
 cat > ~/astra/temp.sh <<EOF
 hwid
 EOF
+
+   cd ~/build/m1n1.bin
+   grep -Ei 'such' | sed 's/.* //g' | while read i; do
+   echo "no m1n1 instance was detected. some features may not work properly."
+done
+
+ cd ~/build/m1n1.macho
+   grep -Ei 'such' | sed 's/.* //g' | while read i; do
+   echo "no m1n1 instance was detected. some features may not work properly."
+done
 
 echo             
 echo "--> astra has finished setup."
