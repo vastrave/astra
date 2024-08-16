@@ -32,12 +32,12 @@ cat > ~/astra/temp.sh <<EOF
 hwid
 EOF
 
-   cd ~/build/m1n1.bin
+   cd ~/m1n1
    grep -Ei 'such' | while read i; do
    echo "no m1n1 instance was detected. some features may not work properly."
 done
 
- cd ~/build/m1n1.macho
+ cd ~/m1n1
    grep -Ei 'such' | while read i; do
    echo "no m1n1 instance was detected. some features may not work properly."
 done
