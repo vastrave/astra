@@ -18,10 +18,6 @@ HOMEBREW_NO_AUTO_UPDATE=1 brew install jwbargsten/misc/defbro
    git clone --recursive https://github.com/AsahiLinux/m1n1.git
    cd m1n1
    make
-
-   grep -Ei 'error|failed' | while read i; do
-   echo "failed to install astra: error building m1n1"
-   exit
                             
 git clone https://github.com/satomiify/astra
 # sh ~/astra/conf.sh
@@ -30,16 +26,6 @@ touch ~/astra/temp.sh
 cat > ~/astra/temp.sh <<EOF
 hwid
 EOF
-
-   cd ~/m1n1
-   grep -Ei 'such' | while read i; do
-   echo "no m1n1 instance was detected. some features may not work properly."
-done
-
- cd ~/m1n1
-   grep -Ei 'such' | while read i; do
-   echo "no m1n1 instance was detected. some features may not work properly."
-done
 
 echo             
 echo "--> astra has finished setup."
