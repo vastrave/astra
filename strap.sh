@@ -48,3 +48,4 @@ sleep 10
    killall ControlStrip
    sudo nvram "recovery-boot-mode=unused"
    sudo reboot
+   
