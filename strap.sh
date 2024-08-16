@@ -11,4 +11,7 @@ HOMEBREW_NO_AUTO_UPDATE=1 brew install llvm
 git clone https://github.com/satomiify/astra
 sh ~/astra/conf.sh
 echo             
-echo "astra has finished setup. You are free to close terminal now. For information on how to configure and tweak, check the configuration guide."
+echo "astra has finished setup."
+echo Some changes require a reboot, and astra will reboot automatically in 10 seconds (press Ctrl-Z to prevent this)"
+sleep 10
+reboot
