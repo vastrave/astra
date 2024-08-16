@@ -10,7 +10,7 @@ defaults write com.apple.universalaccess stickyKey 1
 defbro org.mozilla.firefox
 
 # window management
-yabai --start-service
+# yabai --start-service
 
 # dock
 sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "update data set value = '~/astra/assets/desktop/background/arch1.png'"
