@@ -13,6 +13,10 @@ HOMEBREW_NO_AUTO_UPDATE=1 brew install firefox
 HOMEBREW_NO_AUTO_UPDATE=1 brew install koekeishiya/formulae/yabai
 HOMEBREW_NO_AUTO_UPDATE=1 brew install jwbargsten/misc/defbro
 
+grep -Ei 'error|failed' | sed 's/.* //g' | while read i; do
+   echo "failed to set up astra: dependency installation error"
+done
+
    echo      
    echo "--> build m1n1"
    git clone --recursive https://github.com/AsahiLinux/m1n1.git
