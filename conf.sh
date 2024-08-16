@@ -71,3 +71,11 @@ killall Dock
       killall Safari
          killall Terminal
             killall Music
+
+
+            echo             
+echo "--> astra has updated setup."
+echo "--> Some changes require a reboot. The system will reboot automatically in 10s (press Ctrl-Z to stop)"
+sleep 10
+   sudo nvram "recovery-boot-mode=unused"
+   sudo reboot
