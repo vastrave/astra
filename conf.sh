@@ -36,4 +36,4 @@ defaults write com.apple.appstore ShowDebugMenu -bool true
 
 killall Dock
    killall Finder
-      kilalll TouchBarServer
+      killall TouchBarServer
