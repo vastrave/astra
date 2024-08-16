@@ -9,12 +9,4 @@ HOMEBREW_NO_AUTO_UPDATE=1 brew install llvm
                             # git clone --recursive https://github.com/AsahiLinux/m1n1.git
                             # make
 git clone https://github.com/satomiify/astra
-cat > ~/astra/astra.conf <<EOF
-# astra config file
-
-# default config
-sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "update data set value = '~/astra/assets/desktop/background/arch1.png'"
-defaults write com.apple.dock orientation right
-defaults write com.apple.dock autohide-delay -float 0.5
-defaults write com.apple.dock autohide-time-modifier -float 0.8
-EOF
+sh ~/astra/conf.sh
