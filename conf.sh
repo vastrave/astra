@@ -6,7 +6,11 @@
 # sys
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
 defaults write com.apple.CrashReporter UseUNC 1
+defaults write com.apple.universalaccess stickyKey 1
 defbro org.mozilla.firefox
+
+# window management
+yabai --start-service
 
 # dock
 sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "update data set value = '~/astra/assets/desktop/background/arch1.png'"
@@ -21,7 +25,6 @@ defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
 # defaults write com.apple.dock largesize -float 128
 
 # apps
-
 # -- x/twitter
 defaults write com.twitter.twitter-mac TypeAnywhereToTweet -bool true
 defaults write com.twitter.twitter-mac openLinksInBackground -bool true
