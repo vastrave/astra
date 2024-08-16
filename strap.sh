@@ -6,8 +6,9 @@ echo "Please note that astra may not work properly if you have SIP enabled."
 echo "This script will install some needed dependencies. Is that okay?"
 read
 read
-HOMEBREW_NO_AUTO_UPDATE=1 brew install clang
+HOMEBREW_NO_AUTO_UPDATE=1 brew install clang-format@14
 HOMEBREW_NO_AUTO_UPDATE=1 brew install llvm
+HOMEBREW_NO_AUTO_UPDATE=1 brew install firefox
 HOMEBREW_NO_AUTO_UPDATE=1 brew install koekeishiya/formulae/yabai
 HOMEBREW_NO_AUTO_UPDATE=1 brew install jwbargsten/misc/defbro
                             # git clone --recursive https://github.com/AsahiLinux/m1n1.git
