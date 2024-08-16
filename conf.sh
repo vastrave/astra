@@ -39,5 +39,5 @@ defaults write com.apple.appstore ShowDebugMenu -bool true
 
 killall Dock
    killall Finder
-      pkill TouchBarServer
+      sudo pkill TouchBarServer
          killall ControlStrip
