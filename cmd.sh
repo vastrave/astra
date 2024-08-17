@@ -13,7 +13,7 @@ echo "
 .:'   .:'MMM8&&&'
 :'  .:'
 '::'  "
-
+}
 
 function astra.apply() {
 sh ~/astra/conf.sh
