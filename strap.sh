@@ -13,16 +13,7 @@ echo "
 ▀████▀██▄██████▀ ▀████████▄  ▀████▀██▄
                                       
 astra v0.1
-type anything to continue, f to cancel"
-
-read -n 1 -s user_input
-
-if [ "$user_input" == "1" ]; then
-        echo "--> abort"
-        exit 0
-    else
-        echo "--> hold on.."
-    fi                              
+$(read -p "press enter to continue, f to cancel")"                    
 
 HOMEBREW_NO_AUTO_UPDATE=1 brew install clang-format@14
 HOMEBREW_NO_AUTO_UPDATE=1 brew install llvm
