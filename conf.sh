@@ -32,6 +32,9 @@ defaults write com.apple.dock mineffect scale
 defaults write com.apple.dock largesize -int 56
 # defaults write com.apple.dock largesize -float 128
 
+# menu bar
+
+
 # input
 defaults write NSGlobalDomain KeyRepeat -int 1
 defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
@@ -68,7 +71,7 @@ defaults write com.apple.appstore ShowDebugMenu -bool true
 defaults write com.apple.Safari "ShowFullURLInSmartSearchField" -bool "true"
 
 # -- apple music
-defaults write com.apple.Music "userWantsPlaybackNotifications" -bool "true" && killall Music
+defaults write com.apple.Music "userWantsPlaybackNotifications" -bool "true"
 
 killall Dock
    killall Finder
