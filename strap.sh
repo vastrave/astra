@@ -13,8 +13,7 @@ echo "
 ▀████▀██▄██████▀ ▀████████▄  ▀████▀██▄
                                       
 astra v0.1"
-printf "%s " "press enter to continue, ctrl-z to abort"
-read ans
+"starting installation in 3s. ctrl-z to abort."
 
 HOMEBREW_NO_AUTO_UPDATE=1 brew install clang-format@14
 HOMEBREW_NO_AUTO_UPDATE=1 brew install llvm
