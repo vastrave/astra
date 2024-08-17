@@ -40,8 +40,9 @@ cp -f ~/astra/assets/desktop/dockx/en/FeatureViewController.strings /Application
 
 echo             
 echo "--> completed setup | astra"
-sleep 0.2
+sleep 0.8
 reset
+exit
 
 }
 
