@@ -20,3 +20,7 @@ echo "
 function astra\ -a() {
 sh ~/astra/conf.sh
 }
+
+function astra\ -c() {
+open ~/astra/conf.sh -e
+}
