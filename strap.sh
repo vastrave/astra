@@ -12,8 +12,9 @@ echo "
 ██   ██  █▄   ██ ██    ██    ██   ██  
 ▀████▀██▄██████▀ ▀████████▄  ▀████▀██▄
                                       
-astra v0.1
-$(read -p "press enter to continue, f to cancel")"                    
+astra v0.1"
+printf "%s " "press enter to continue, ctrl-z to abort"
+read ans
 
 HOMEBREW_NO_AUTO_UPDATE=1 brew install clang-format@14
 HOMEBREW_NO_AUTO_UPDATE=1 brew install llvm
