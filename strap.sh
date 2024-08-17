@@ -1,8 +1,8 @@
 #!/bin/bash
 
+main() {
 clear
-echo "        
-                                      
+echo "                                       
                  ██                   
                  ██                   
  ▄█▀██▄  ▄██▀████████▀███▄███ ▄█▀██▄  
@@ -13,6 +13,8 @@ echo "
 
 astra v0.1
 type astrap to continue, x to cancel"
+
+read -n 1 -s user_input
 
 if [ "$user_input" == "x" ]; then
         echo "--> abort"
@@ -48,4 +50,5 @@ echo "--> completed setup | astra"
 sleep 0.2
 reset
 
+}
 main
