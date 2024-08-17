@@ -6,7 +6,7 @@ echo "
                   .:'  .:     echo "astra v0.1"
         ,MMM8&&&.:'   .:'     echo "by: satomiify"
        MMMMM88&&&&  .:'       
-      MMMMM88&&&&&&:'         echo "device:" echo uname -r
+      MMMMM88&&&&&&:'         echo "device:" uname -r
       MMMMM88&&&&&&           echo "kernel:" uname -or
     .:MMMMM88&&&&&&
   .:'  MMMMM88&&&&
