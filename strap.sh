@@ -13,11 +13,11 @@ echo "
 ▀████▀██▄██████▀ ▀████████▄  ▀████▀██▄
                                       
 astra v0.1
-type anything to continue, x to cancel"
+type anything to continue, f to cancel"
 
 read -n 1 -s user_input
 
-if [ "$user_input" == "x" ]; then
+if [ "$user_input" == "f" ]; then
         echo "--> abort"
         exit 0
     else
