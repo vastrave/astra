@@ -1,8 +1,8 @@
 #!/bin/bash
 
-main() {
 clear
-echo "                                       
+
+echo "
                  ██                   
                  ██                   
  ▄█▀██▄  ▄██▀████████▀███▄███ ▄█▀██▄  
@@ -10,7 +10,7 @@ echo "
  ▄█████  ▀█████▄ ██    ██     ▄█████  
 ██   ██  █▄   ██ ██    ██    ██   ██  
 ▀████▀██▄██████▀ ▀████████▄  ▀████▀██▄
-
+                                      
 astra v0.1
 type astrap to continue, x to cancel"
 
@@ -50,5 +50,3 @@ echo "--> completed setup | astra"
 sleep 0.2
 reset
 
-}
-main
