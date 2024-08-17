@@ -15,7 +15,7 @@ echo "
 astra v0.1
 type anything to continue, x to cancel"
 
-read -n 1 -s user_input
+read -n x -s user_input
 
 if [ "$user_input" == "x" ]; then
         echo "--> abort"
