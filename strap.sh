@@ -47,3 +47,5 @@ echo
 echo "--> completed setup | astra"
 sleep 0.2
 reset
+
+main
