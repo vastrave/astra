@@ -17,7 +17,7 @@ type anything to continue, f to cancel"
 
 read -n 1 -s user_input
 
-if [ "$user_input" == "f" ]; then
+if [ "$user_input" == "1" ]; then
         echo "--> abort"
         exit 0
     else
