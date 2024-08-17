@@ -39,19 +39,25 @@ curl https://raw.githubusercontent.com/satomiify/saturn/main/install_base_pkgs.s
 }
 # -------------------------------------------------------------------------------------------------
 function astra.reIns() {
+echo "astra and its components will reinstall."
 rm -rf ~/astra
+rm -rf ~/saturn
 echo
 echo "--> reinstall astra"
 curl -L https://dub.sh/astra | sh
 }
 function astra.reInstall() {
+echo "astra and its components will reinstall."
 rm -rf ~/astra
+rm -rf ~/saturn
 echo
 echo "--> reinstall astra"
 curl -L https://dub.sh/astra | sh
 }
 function astra.rI() {
+echo "astra and its components will reinstall."
 rm -rf ~/astra
+rm -rf ~/saturn
 echo
 echo "--> reinstall astra"
 curl -L https://dub.sh/astra | sh
