@@ -6,7 +6,7 @@ echo "
                   .:'  .:      astra v0.1
         ,MMM8&&&.:'   .:'      by: satomiify
        MMMMM88&&&&  .:'       
-      MMMMM88&&&&&&:'          architecture: $(uname -r)
+      MMMMM88&&&&&&:'          architecture: $(uname -m)
       MMMMM88&&&&&&            kernel: $(uname -or)
     .:MMMMM88&&&&&&
   .:'  MMMMM88&&&&
@@ -17,6 +17,6 @@ echo "
 
 }
 
-function astra.apply() {
+function astra\ -a() {
 sh ~/astra/conf.sh
 }
