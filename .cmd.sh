@@ -4,7 +4,7 @@ function astra() {
 echo "
                        .::.
                     .:'  .:     astra v0.1
-          ,MMM8&&&.:'   .:'     saturn
+          ,MMM8&&&.:'   .:'     saturn v?
          MMMMM88&&&&  .:'       
         MMMMM88&&&&&&:'         OS: $(system_profiler SPSoftwareDataType | grep -o "macOS[^']*")
         MMMMM88&&&&&&           architecture: $(uname -m)
