@@ -8,9 +8,9 @@ echo "
          MMMMM88&&&&  .:'       
         MMMMM88&&&&&&:'         architecture: $(uname -m)
         MMMMM88&&&&&&           kernel: $(uname -or)
-      .:MMMMM88&&&&&&
-    .:'  MMMMM88&&&&
-  .:'   .:'MMM8&&&'
+      .:MMMMM88&&&&&&           OS: $(system_profiler SPSoftwareDataType | grep -o "macOS[^']*")
+    .:'  MMMMM88&&&&            memory $(system_profiler SPHardwareDataType | grep -Eo ":[^']*GB|TB")
+  .:'   .:'MMM8&&&'             terminal: $(echo $TERM_PROGRAM)
   :'  .:'
   '::'  
      "
