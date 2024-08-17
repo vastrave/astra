@@ -3,16 +3,17 @@
 function astra() {
 echo "
                      .::.
-                  .:'  .:      echo "astra v0.1"
-        ,MMM8&&&.:'   .:'      echo "by: satomiify"
+                  .:'  .:      astra v0.1
+        ,MMM8&&&.:'   .:'      by: satomiify
        MMMMM88&&&&  .:'       
-      MMMMM88&&&&&&:'          echo "device:" uname -r
-      MMMMM88&&&&&&            echo "kernel:" uname -or
+      MMMMM88&&&&&&:'          architecture: $(uname -r)
+      MMMMM88&&&&&&            kernel: $(uname -or)
     .:MMMMM88&&&&&&
   .:'  MMMMM88&&&&
 .:'   .:'MMM8&&&'
 :'  .:'
 '::'  "
+
 }
 
 function astra.apply() {
