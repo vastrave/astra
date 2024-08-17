@@ -11,6 +11,7 @@ defaults write com.apple.CrashReporter UseUNC 1
 defaults write com.apple.universalaccess stickyKey 1
 defaults write com.apple.screencapture "type" -string "jpg"
 defbro org.mozilla.firefox
+# /opt/homebrew/opt/mariadb/bin/mariadbd-safe --datadir\=/opt/homebrew/var/mysql
 
 # window management
 # yabai --start-service
