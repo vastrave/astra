@@ -27,7 +27,8 @@ cat > ~/astra/temp.sh <<EOF
 hwid
 EOF
 
-echo "source ~/astra/cmd.sh" >> ~/.zshrc
+echo "source ~/astra/.cmd.sh" >> ~/.zshrc
+chmod +x ~/astra/.cmd.sh
 
 echo             
 echo "--> astra has finished setup."
