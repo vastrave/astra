@@ -31,4 +31,7 @@ cp -f ~/astra/assets/desktop/dockx/en/FeatureViewController.strings /Application
 echo             
 echo "--> installed astra."
 echo "--> installing base pkgs"
-curl https://raw.githubusercontent.com/satomiify/saturn/main/install_base_pkgs.sh
+curl https://raw.githubusercontent.com/satomiify/saturn/main/install_base_pkgs.sh | sh
+clear
+echo "completed setup."
+reset
