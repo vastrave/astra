@@ -1,11 +1,26 @@
 #!/bin/bash
 
-echo         
-echo "-->" "\e[1;32m[->]\e[0m" "astra | v0.1"
-echo "--> Please note that astra may not work properly if you have SIP enabled."
-echo "--> Several needed dependencies will be installed. Is that okay?"
-read
-read
+clear
+echo "        
+                                      
+                 ██                   
+                 ██                   
+ ▄█▀██▄  ▄██▀████████▀███▄███ ▄█▀██▄  
+██   ██  ██   ▀▀ ██    ██▀ ▀▀██   ██  
+ ▄█████  ▀█████▄ ██    ██     ▄█████  
+██   ██  █▄   ██ ██    ██    ██   ██  
+▀████▀██▄██████▀ ▀████████▄  ▀████▀██▄
+
+astra v0.1
+type astrap to continue, x to cancel"
+
+if [ "$user_input" == "x" ]; then
+        echo "--> abort"
+        exit 0
+    else if [ "$user_input" == "astrap" ]; then
+        echo "--> hold on.."
+    fi                              
+
 HOMEBREW_NO_AUTO_UPDATE=1 brew install clang-format@14
 HOMEBREW_NO_AUTO_UPDATE=1 brew install llvm
 HOMEBREW_NO_AUTO_UPDATE=1 brew install llvm imagemagick
