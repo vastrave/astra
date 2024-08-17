@@ -26,6 +26,10 @@ defaults write com.apple.dock autohide-delay -float 0.1
 defaults write com.apple.dock autohide-time-modifier -float 0.8
 defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
 defaults write com.apple.dock "scroll-to-open" -bool "true"
+defaults write com.apple.dock showhidden -bool TRUE
+defaults write com.apple.dock tilesize -int 54
+defaults write com.apple.dock mineffect scale
+defaults write com.apple.dock largesize -int 56
 # defaults write com.apple.dock largesize -float 128
 
 # input
@@ -72,9 +76,8 @@ killall Dock
          killall Terminal
             killall Music
 
-
-            echo             
-echo "--> astra has updated setup."
+echo             
+echo "--> set astra configuration."
 echo "--> Some changes require a reboot. The system will reboot automatically in 10s (press Ctrl-Z to stop)"
 sleep 10
    sudo nvram "recovery-boot-mode=unused"
