@@ -1,0 +1,83 @@
+// 翻译精简短小
+"1pY-hu-eYX.title" = "Play speed related to CPU usage";
+
+// Class = "NSMenuItem"; title = "Item 1"; ObjectID = "5ev-tV-Fy5";
+"5ev-tV-Fy5.title" = "Item 1";
+
+// Class = "NSTextFieldCell"; title = "Appearance:"; ObjectID = "5yr-7A-TYn";
+"5yr-7A-TYn.title" = "Appearance:";
+
+// Class = "NSTextFieldCell"; title = "Drop file 👉"; ObjectID = "6VZ-QD-eZ3";
+"6VZ-QD-eZ3.title" = "Drop file here 👉";
+
+// Class = "NSTextFieldCell"; title = "Background Color(End):"; ObjectID = "8nJ-CR-DWy";
+"8nJ-CR-DWy.title" = "Background Color(End):";
+
+// Class = "NSMenuItem"; title = "          "; ObjectID = "9g7-Cw-L1s";
+"9g7-Cw-L1s.title" = "          ";
+
+// Class = "NSTextFieldCell"; title = "0%"; ObjectID = "AXP-Ha-FVH";
+"AXP-Ha-FVH.title" = "0%";
+
+// Class = "NSButtonCell"; title = "Play randomly per 10 mins (Pro)"; ObjectID = "Aeg-Al-FZ8";
+"Aeg-Al-FZ8.title" = "Play randomly per 10 mins (Pro)";
+
+// Class = "NSMenuItem"; title = "Item 2"; ObjectID = "Ct6-nI-LUU";
+"Ct6-nI-LUU.title" = "Item 2";
+
+// Class = "NSTextFieldCell"; title = "Theme:"; ObjectID = "LGr-iY-LAb";
+"LGr-iY-LAb.title" = "Theme:";
+
+// Class = "NSTextFieldCell"; title = "Border Width (Pro):"; ObjectID = "OtN-pB-daN";
+"OtN-pB-daN.title" = "Border Width (Pro):";
+
+// Class = "NSButtonCell"; title = "Use pure color"; ObjectID = "UiO-3x-hUG";
+"UiO-3x-hUG.title" = "Use pure color";
+
+// Class = "NSMenuItem"; title = "Item 1"; ObjectID = "Vfy-nj-xY1";
+"Vfy-nj-xY1.title" = "Item 1";
+
+// Class = "NSTextFieldCell"; title = "🧙Custom App Icon:"; ObjectID = "ZGM-Nf-gsd";
+"ZGM-Nf-gsd.title" = "🧙Custom App Icon:";
+
+// Class = "NSMenuItem"; title = "Item 2"; ObjectID = "cLE-15-j8b";
+"cLE-15-j8b.title" = "Item 2";
+
+// Class = "NSMenuItem"; title = "Item 2"; ObjectID = "cSO-w5-GTh";
+"cSO-w5-GTh.title" = "Item 2";
+
+// Class = "NSMenuItem"; title = "Item 3"; ObjectID = "fld-IC-fHM";
+"fld-IC-fHM.title" = "Item 3";
+
+// Class = "NSButtonCell"; title = "Hide state badge"; ObjectID = "gCe-0e-U2r";
+"gCe-0e-U2r.title" = "Hide state badge";
+
+// Class = "NSTextFieldCell"; title = "Border Color:"; ObjectID = "hIk-DD-yMt";
+"hIk-DD-yMt.title" = "Border Color:";
+
+// 不要翻译 Pro
+"iG3-hE-aaJ.title" = "Flip horizontal (Pro)";
+
+// Class = "NSTextFieldCell"; title = "Text Color:"; ObjectID = "lYf-19-teT";
+"lYf-19-teT.title" = "Text Color:";
+
+// Class = "NSTextFieldCell"; title = "Custom Tips"; ObjectID = "lqu-UZ-5rr";
+"lqu-UZ-5rr.title" = "Custom Tips";
+
+// Class = "NSMenuItem"; title = "Item 3"; ObjectID = "niJ-xj-jjZ";
+"niJ-xj-jjZ.title" = "Item 3";
+
+// Class = "NSTextFieldCell"; title = "100%"; ObjectID = "ogR-SS-5s7";
+"ogR-SS-5s7.title" = "100%";
+
+// Class = "NSButtonCell"; title = "Hide state text"; ObjectID = "pDU-9T-sM0";
+"pDU-9T-sM0.title" = "Hide state text";
+
+// Class = "NSMenuItem"; title = "Item 3"; ObjectID = "pUW-k5-iyt";
+"pUW-k5-iyt.title" = "Item 3";
+
+// Class = "NSTextFieldCell"; title = "Background Color(Start):"; ObjectID = "vi9-r3-fCQ";
+"vi9-r3-fCQ.title" = "Background Color(Start):";
+
+// Class = "NSTextFieldCell"; title = "Corner radius (Pro):"; ObjectID = "zen-9D-qtl";
+"zen-9D-qtl.title" = "Corner Radius (Pro):";
