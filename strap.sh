@@ -12,15 +12,8 @@ HOMEBREW_NO_AUTO_UPDATE=1 brew install llvm imagemagick
 # HOMEBREW_NO_AUTO_UPDATE=1 brew install firefox
 HOMEBREW_NO_AUTO_UPDATE=1 brew install koekeishiya/formulae/yabai
 HOMEBREW_NO_AUTO_UPDATE=1 brew install jwbargsten/misc/defbro
-
-   # echo      
-   # echo "--> build m1n1"
-   # git clone --recursive https://github.com/AsahiLinux/m1n1.git
-   # cd m1n1
-   # make
                             
 git clone https://github.com/satomiify/astra
-# sh ~/astra/conf.sh
 
 touch ~/astra/temp.sh
 cat > ~/astra/temp.sh <<EOF
