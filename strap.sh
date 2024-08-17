@@ -29,9 +29,6 @@ cp -f ~/astra/assets/desktop/dockx/en/Localizable.strings /Applications/DockX.ap
 cp -f ~/astra/assets/desktop/dockx/en/FeatureViewController.strings /Applications/DockX.app/Contents/Resources/en.lproj/FeatureViewController.strings
 
 echo             
-echo "--> installed astra."
-echo "--> installing base pkgs"
-curl https://raw.githubusercontent.com/satomiify/saturn/main/install_base_pkgs.sh | sh
-clear
-echo "completed setup."
+echo "--> completed setup | astra"
+sleep 0.2
 reset
