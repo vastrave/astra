@@ -23,7 +23,7 @@ sh ~/astra/conf.sh
 function astra.apply() {
 sh ~/astra/conf.sh
 }
-
+# -------------------------------------------------------------------------------------------------
 function astra.c() {
 open ~/astra/conf.sh -e
 }
@@ -33,7 +33,28 @@ open ~/astra/conf.sh -e
 function astra.config() {
 open ~/astra/conf.sh -e
 }
-
+# -------------------------------------------------------------------------------------------------
 function astra.ibpkg() {
 curl https://raw.githubusercontent.com/satomiify/saturn/main/install_base_pkgs.sh | sh
 }
+# -------------------------------------------------------------------------------------------------
+function astra.reIns() {
+rm -rf ~/astra
+echo
+echo "--> reinstall astra"
+curl -L https://dub.sh/astra | sh
+}
+function astra.reInstall() {
+rm -rf ~/astra
+echo
+echo "--> reinstall astra"
+curl -L https://dub.sh/astra | sh
+}
+function astra.rI() {
+rm -rf ~/astra
+echo
+echo "--> reinstall astra"
+curl -L https://dub.sh/astra | sh
+}
+# -------------------------------------------------------------------------------------------------
+# function astra.sr() {
