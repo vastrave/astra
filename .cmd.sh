@@ -17,10 +17,19 @@ echo "
 
 }
 
-function "astra\ -a"() {
+function astra.a() {
+sh ~/astra/conf.sh
+}
+function astra.apply() {
 sh ~/astra/conf.sh
 }
 
-function "astra\ -c"() {
+function astra.c() {
+open ~/astra/conf.sh -e
+}
+function astra.conf() {
+open ~/astra/conf.sh -e
+}
+function astra.config() {
 open ~/astra/conf.sh -e
 }
