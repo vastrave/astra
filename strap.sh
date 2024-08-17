@@ -19,7 +19,7 @@ read -n 1 -s user_input
 if [ "$user_input" == "x" ]; then
         echo "--> abort"
         exit 0
-    else if [ "$user_input" == "astrap" ]; then
+    else [ "$user_input" == "astrap" ]; then
         echo "--> hold on.."
     fi                              
 
