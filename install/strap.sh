@@ -3,6 +3,7 @@
 sleep 0.1
 set -e
 
+ # macOS check
  macsys="/System"
 if [ ! -d "$macsys" ]; then
     echo " It seems you are on an unsupported device."
@@ -11,14 +12,24 @@ if [ ! -d "$macsys" ]; then
 else
    echo
    echo " hold on..."
-   
+
 fi
 
+ # linux check
  root="/root"
 if [ -d "$root" ]; then
    echo "--> astra has not yet been tested on Linux. Continue? (enter ↵)"
    read
+   echo
+   echo " hold on..."
 
+fi
+
+# ------------------------------------------------------------------------------------------------
+ dir=".config/astra"
+if [ -d "$dir" ]; then
+   echo "--> astra is already installed on this device."
+   exit 1
 fi
 
       echo " Getting system information."
