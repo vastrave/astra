@@ -2,6 +2,18 @@
 
 main() {
      set -e
+
+ macsys="/System"
+if [ ! -d "$macsys" ]; then
+    echo "astra can only be installed on macOS or Linux devices."
+    exit 1
+fi
+
+
+    root="/root"
+if [ -d "$root" ]; then
+    echo "astra has not yet been tested on Linux. Install? (enter ↵)"
+    read
      
 clear
 
