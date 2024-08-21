@@ -24,7 +24,7 @@ tmp=/tmp/astrap
 cd $tmp
 
      cp -f ~/astra/scripts/.astrap.sh /tmp/astrap
-     sudo rm -rf ~/astra/scripts/.astrap.sh
+     sudo rm -rf ~/astra/scripts/strap.sh
      
 caffeinate -dis sudo -E sh .astrap.sh
 
