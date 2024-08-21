@@ -18,21 +18,28 @@ fi
 #    echo "--> astra has not yet been tested on Linux. Continue? (enter ↵)"
 #    read
 
-    echo " Settings things up for you..."
-    git clone https://github.com/satomiify/astra
+    echo " Setting installer up for you..."
+    git clone -n --depth=1 --filter=tree:0 \
+    https://github.com/satomiify/astra/
+    #
+cd astra
+  git sparse-checkout set --no-cone installer
+    git checkout
+
+    cd
     
 mkdir /tmp/astrap
 
 tmp=/tmp/astrap
-cd "$tmp"
 
-     cp -f ~/astra/scripts/.astrap.sh /tmp/astrap
-     rm -rf ~/astra/scripts/strap.sh
+     cp -f astra/installer/.astrap.sh "$tmp"
+     rm -rf astra/installer
 
      if [ "$USER" != "root" ]; then
         echo "--> astrap needs to run as root;"
           echo "  please enter your password if prompted."
-            caffeinate -dis sudo -E sh .astrap.sh
+            echo 
+              caffeinate -dis sudo -E sh .astrap.sh
     else
         caffeinate -dis sudo -E sh .astrap.sh
     fi
