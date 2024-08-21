@@ -1,5 +1,7 @@
 #!/bin/sh
 
+main() {
+   clear
 echo "
                   ██                   
                   ██                   
@@ -42,3 +44,6 @@ echo " --> completed setup | astra"
 sleep 0.8
 reset
 exit
+}
+
+main
