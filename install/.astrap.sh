@@ -19,7 +19,7 @@ pip3 install keep
                             
 git clone https://github.com/satomiify/astra
 
-mkdir ~/.config/astra && cp -f ~/astra/scripts/conf.sh ~/.config/astra
+mkdir ~/.config/astra && cp -f astra/scripts/conf.sh ~/.config/astra
 
 touch ~/astra/temp.txt
 cat > ~/astra/temp.txt <<EOF
