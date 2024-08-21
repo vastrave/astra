@@ -19,6 +19,15 @@ fi
 #    echo "--> astra has not yet been tested on Linux. Continue? (enter ↵)"
 #    read
 
+      echo " Getting system information."
+      sleep 2
+      echo
+      echo "\033[1;34m       OS:\033[0m $(system_profiler SPSoftwareDataType | grep -o "macOS[^']*")
+       architecture: $(uname -m)
+       kernel: $(uname -or)
+       memory:$(system_profiler SPHardwareDataType | grep -Eo "[^']*GB|TB")"
+      
+    echo
     echo " Setting installer up for you..."
     echo
     git clone -n --depth=1 --filter=tree:0 \
