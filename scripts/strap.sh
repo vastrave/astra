@@ -28,7 +28,7 @@ cd $tmp
 
      if [ "$USER" != "root" ]; then
         echo "--> astrap needs to run as root;"
-          echo "--> please enter your password if prompted."
+          echo "  please enter your password if prompted."
             caffeinate -dis sudo -E sh .astrap.sh
     else
         caffeinate -dis sudo -E sh .astrap.sh
