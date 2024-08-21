@@ -18,8 +18,8 @@ fi
 #    echo "--> astra has not yet been tested on Linux. Continue? (enter ↵)"
 #    read
 
-#    echo " Settings things up for you..."
-#    git clone https://github.com/satomiify/astra
+    echo " Settings things up for you..."
+    git clone https://github.com/satomiify/astra
     
 mkdir /tmp/astrap
 
@@ -27,7 +27,7 @@ tmp=/tmp/astrap
 cd "$tmp"
 
      cp -f ~/astra/scripts/.astrap.sh /tmp/astrap
-     sudo rm -rf ~/astra/scripts/strap.sh
+     rm -rf ~/astra/scripts/strap.sh
 
      if [ "$USER" != "root" ]; then
         echo "--> astrap needs to run as root;"
