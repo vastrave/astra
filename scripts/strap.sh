@@ -7,16 +7,19 @@ if [ ! -d "$macsys" ]; then
     echo " It seems you are on an unsupported device."
     echo " astra can only be installed on macOS or Linux systems."
     exit 1
+else
+   echo " hold on..."
+   
 fi
 
 
-    root="/root"
-if [ -d "$root" ]; then
-    echo "--> astra has not yet been tested on Linux. Continue? (enter ↵)"
-    read
+#    root="/root"
+# if [ -d "$root" ]; then
+#    echo "--> astra has not yet been tested on Linux. Continue? (enter ↵)"
+#    read
 
-    echo " Settings things up for you..."
-    git clone https://github.com/satomiify/astra
+#    echo " Settings things up for you..."
+#    git clone https://github.com/satomiify/astra
     
 mkdir /tmp/astrap
 
