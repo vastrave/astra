@@ -1,16 +1,16 @@
 #!/bin/sh
 
 echo "
-                 ██                   
-                 ██                   
- ▄█▀██▄  ▄██▀████████▀███▄███ ▄█▀██▄  
-██   ██  ██   ▀▀ ██    ██▀ ▀▀██   ██  
- ▄█████  ▀█████▄ ██    ██     ▄█████  
-██   ██  █▄   ██ ██    ██    ██   ██  
-▀████▀██▄██████▀ ▀████████▄  ▀████▀██▄
+                  ██                   
+                  ██                   
+  ▄█▀██▄  ▄██▀████████▀███▄███ ▄█▀██▄  
+ ██   ██  ██   ▀▀ ██    ██▀ ▀▀██   ██  
+  ▄█████  ▀█████▄ ██    ██     ▄█████  
+ ██   ██  █▄   ██ ██    ██    ██   ██  
+ ▀████▀██▄██████▀ ▀████████▄  ▀████▀██▄
                                       
-astra v0.1
-starting installation in 3s. ctrl-c to abort."
+ astra v0.1
+ starting installation in 3s. ctrl-c to abort."
 sleep 3
 
 HOMEBREW_NO_AUTO_UPDATE=1 brew install llvm imagemagick python3 dockx jwbargsten/misc/defbro
@@ -33,7 +33,8 @@ cp -f ~/astra/assets/desktop/dockx/en/Localizable.strings /Applications/DockX.ap
 cp -f ~/astra/assets/desktop/dockx/en/FeatureViewController.strings /Applications/DockX.app/Contents/Resources/en.lproj/FeatureViewController.strings
 
 echo             
-echo "--> completed setup | astra"
+echo " --> completed setup | astra"
+    sudo rm -rf /tmp/astrap
 sleep 0.8
 reset
 exit
