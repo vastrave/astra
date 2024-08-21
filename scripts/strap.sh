@@ -21,7 +21,7 @@ if [ -d "$root" ]; then
 mkdir /tmp/astrap
 
 tmp=/tmp/astrap
-cd $tmp
+cd "$tmp"
 
      cp -f ~/astra/scripts/.astrap.sh /tmp/astrap
      sudo rm -rf ~/astra/scripts/strap.sh
