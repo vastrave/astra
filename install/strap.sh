@@ -32,8 +32,8 @@ mkdir /tmp/astrap
 
 tmp=/tmp/astrap
 
-     cp -f astra/installer/.astrap.sh "$tmp"
-     rm -rf astra/installer
+     cp -f astra/install/.astrap.sh "$tmp"
+     rm -rf astra/install
 
      if [ "$USER" != "root" ]; then
         echo "--> astrap needs to run as root;"
