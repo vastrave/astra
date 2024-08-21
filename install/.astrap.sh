@@ -15,8 +15,7 @@ echo "
  starting installation in 3s. ctrl-c to abort."
 sleep 3
 
-sudo -i
- exit
+sudo -i && exit &&
 
 HOMEBREW_NO_AUTO_UPDATE=1 brew install llvm imagemagick python3 dockx jwbargsten/misc/defbro
 pip3 install keep
@@ -43,7 +42,6 @@ echo " --> completed setup | astra"
     sudo rm -rf /tmp/astrap
     sudo rm -rf astra/install
     sudo rm -rf astra/scripts
-    sudo rm -rf astra/tools
 sleep 0.8
 reset
 exit
