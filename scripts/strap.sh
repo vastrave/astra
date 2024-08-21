@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# set -e
+
  macsys="/System"
 if [ ! -d "$macsys" ]; then
     echo " It seems you are on an unsupported device."
