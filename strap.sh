@@ -1,6 +1,8 @@
 #!/bin/bash
 
 main() {
+     set -e
+     
 clear
 
 echo "
