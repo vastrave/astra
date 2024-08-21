@@ -25,5 +25,13 @@ cd $tmp
 
      cp -f ~/astra/scripts/.astrap.sh /tmp/astrap
      sudo rm -rf ~/astra/scripts/strap.sh
-     
-caffeinate -dis sudo -E sh .astrap.sh
+
+     if [ "$USER" != "root" ]; then
+        echo " astrap needs to run as root;"
+          echo " please enter your password if prompted."
+            caffeinate -dis sudo -E sh .astrap.sh
+    else
+        caffeinate -dis sudo -E sh .astrap.sh
+    fi
+fi
+
