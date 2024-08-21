@@ -15,7 +15,7 @@ echo "
 ▀████▀██▄██████▀ ▀████████▄  ▀████▀██▄
                                       
 astra v0.1
-starting installation in 3s. ctrl-z to abort."
+starting installation in 3s. ctrl-c to abort."
 sleep 3
 
 HOMEBREW_NO_AUTO_UPDATE=1 brew install clang-format@14
