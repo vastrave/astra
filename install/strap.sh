@@ -14,11 +14,12 @@ else
    
 fi
 
+ root="/root"
+if [ -d "$root" ]; then
+   echo "--> astra has not yet been tested on Linux. Continue? (enter ↵)"
+   read
 
-#    root="/root"
-# if [ -d "$root" ]; then
-#    echo "--> astra has not yet been tested on Linux. Continue? (enter ↵)"
-#    read
+fi
 
       echo " Getting system information."
       sleep 2
