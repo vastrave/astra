@@ -16,6 +16,8 @@ if [ -d "$root" ]; then
     read
 
     echo " Settings things up for you..."
+    git clone https://github.com/satomiify/astra
+    
 mkdir /tmp/astrap
 
 tmp=/tmp/astrap
