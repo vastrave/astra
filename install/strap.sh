@@ -1,6 +1,7 @@
 #!/bin/sh
 
-# set -e
+sleep 0.1
+set -e
 
  macsys="/System"
 if [ ! -d "$macsys" ]; then
