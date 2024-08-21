@@ -15,8 +15,6 @@ echo "
  starting installation in 3s. ctrl-c to abort."
 sleep 3
 
-sudo -i && exit &&
-
 HOMEBREW_NO_AUTO_UPDATE=1 brew install llvm imagemagick python3 dockx jwbargsten/misc/defbro
 pip3 install keep
 # HOMEBREW_NO_AUTO_UPDATE=1 brew install firefox
