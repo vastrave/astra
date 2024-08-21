@@ -26,8 +26,8 @@ cat > ~/astra/temp.txt <<EOF
 hwid
 EOF
 
-echo "source ~/astra/.cmd.sh" >> ~/.zshrc
-chmod +x ~/astra/.cmd.sh
+echo "source ~/astra/.testcmd.sh" >> ~/.zshrc
+chmod +x ~/astra/.testcmd.sh
 
 cp -f ~/astra/assets/desktop/dockx/base/FeatureViewController.nib /Applications/DockX.app/Contents/Resources/Base.lproj/FeatureViewController.nib
 cp -f ~/astra/assets/desktop/dockx/en/Localizable.strings /Applications/DockX.app/Contents/Resources/en.lproj/Localizable.strings
