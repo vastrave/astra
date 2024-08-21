@@ -12,7 +12,7 @@ fi
 
     root="/root"
 if [ -d "$root" ]; then
-    echo " astra has not yet been tested on Linux. Continue? (enter ↵)"
+    echo "--> astra has not yet been tested on Linux. Continue? (enter ↵)"
     read
 
     echo " Settings things up for you..."
@@ -27,8 +27,8 @@ cd $tmp
      sudo rm -rf ~/astra/scripts/strap.sh
 
      if [ "$USER" != "root" ]; then
-        echo " astrap needs to run as root;"
-          echo " please enter your password if prompted."
+        echo "--> astrap needs to run as root;"
+          echo "--> please enter your password if prompted."
             caffeinate -dis sudo -E sh .astrap.sh
     else
         caffeinate -dis sudo -E sh .astrap.sh
