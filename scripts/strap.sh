@@ -5,19 +5,18 @@ main() {
 
  macsys="/System"
 if [ ! -d "$macsys" ]; then
-    echo "It seems you are on an unsupported device."
-    echo "astra can only be installed on macOS or Linux systems."
+    echo " It seems you are on an unsupported device."
+    echo " astra can only be installed on macOS or Linux systems."
     exit 1
 fi
 
 
     root="/root"
 if [ -d "$root" ]; then
-    echo "astra has not yet been tested on Linux. Install? (enter ↵)"
+    echo " astra has not yet been tested on Linux. Continue? (enter ↵)"
     read
-     
-clear
 
+    echo " Settings things up for you..."
 mkdir /tmp/astrap
 
 tmp=/tmp/astrap
