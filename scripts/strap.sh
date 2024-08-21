@@ -5,7 +5,8 @@ main() {
 
  macsys="/System"
 if [ ! -d "$macsys" ]; then
-    echo "astra can only be installed on macOS or Linux devices."
+    echo "It seems you are on an unsupported device."
+    echo "astra can only be installed on macOS or Linux systems."
     exit 1
 fi
 
@@ -39,6 +40,9 @@ HOMEBREW_NO_AUTO_UPDATE=1 brew install dockx
 HOMEBREW_NO_AUTO_UPDATE=1 brew install jwbargsten/misc/defbro
                             
 git clone https://github.com/satomiify/astra
+
+mkdir ~/.config/astra
+cp -f ~/astra/scripts/conf.sh ~/.config/astra
 
 touch ~/astra/temp.txt
 cat > ~/astra/temp.txt <<EOF
