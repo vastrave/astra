@@ -14,6 +14,7 @@ echo "
 sleep 3
 
 HOMEBREW_NO_AUTO_UPDATE=1 brew install llvm imagemagick python3 dockx jwbargsten/misc/defbro
+pip3 install keep
 # HOMEBREW_NO_AUTO_UPDATE=1 brew install firefox
                             
 git clone https://github.com/satomiify/astra
