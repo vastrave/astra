@@ -25,7 +25,7 @@ fi
     https://github.com/satomiify/astra/
     #
 cd astra
-  git sparse-checkout set --no-cone .install
+  git sparse-checkout set --no-cone install
     git checkout
 
     cd
@@ -34,8 +34,8 @@ mkdir /tmp/astrap
 
 tmp=/tmp/astrap
 
-     cp -f astra/.install/.astrap.sh "$tmp"
-     rm -rf astra/.install
+     cp -f astra/install/.astrap.sh "$tmp"
+     rm -rf astra/install
 
         cd "$tmp"
 
