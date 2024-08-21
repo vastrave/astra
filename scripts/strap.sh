@@ -1,6 +1,5 @@
 #!/bin/sh
 
-main() {
      set -e
 
  macsys="/System"
@@ -26,7 +25,3 @@ cd $tmp
      sudo rm -rf ~/astra/scripts/strap.sh
      
 caffeinate -dis sudo -E sh .astrap.sh
-
-}
-
-main
