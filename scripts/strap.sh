@@ -33,5 +33,4 @@ cd $tmp
     else
         caffeinate -dis sudo -E sh .astrap.sh
     fi
-fi
 
