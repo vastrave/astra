@@ -44,11 +44,19 @@ fi
 brew install llvm imagemagick python3 dockx jwbargsten/misc/defbro
 pip3 install keep
 # HOMEBREW_NO_AUTO_UPDATE=1 brew install firefox
-                            
-git clone https://github.com/satomiify/astra
 
+ printf ' -> installing astra   '
+(while :; do for c in / - \\ \|; do printf '%s\b' "$c"; sleep 0.2; done; done) &
+git clone --quiet https://github.com/satomiify/astra
+{ printf '\n'; kill $! && wait $!; } 2>/dev/null
+
+sleep 0.1
+
+ echo
+ printf ' -> managing files   '
+(while :; do for c in / - \\ \|; do printf '%s\b' "$c"; sleep 0.2; done; done) &
+sleep 1
 mkdir ~/.config/astra && cp -f astra/scripts/conf.sh ~/.config/astra
-
 touch ~/astra/temp.txt
 cat > ~/astra/temp.txt <<EOF
 hwid
@@ -60,6 +68,9 @@ chmod +x ~/astra/.testcmd.sh
 cp -f ~/astra/assets/desktop/dockx/base/FeatureViewController.nib /Applications/DockX.app/Contents/Resources/Base.lproj/FeatureViewController.nib
 cp -f ~/astra/assets/desktop/dockx/en/Localizable.strings /Applications/DockX.app/Contents/Resources/en.lproj/Localizable.strings
 cp -f ~/astra/assets/desktop/dockx/en/FeatureViewController.strings /Applications/DockX.app/Contents/Resources/en.lproj/FeatureViewController.strings
+
+{ printf '\n'; kill $! && wait $!; } 2>/dev/null
+
 
 echo             
 echo " --> completed setup | astra"
