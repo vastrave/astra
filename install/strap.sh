@@ -66,7 +66,7 @@ tmp=/tmp/astrap
 #       echo "--> astrap needs to run as root;"
 #         echo "  please enter your password if prompted."
 #           echo
-             caffeinate -dis sudo -E sh .astrap.sh
+#             caffeinate -dis sudo -E sh .astrap.sh
 #    else
 #        caffeinate -dis sudo -E sh .astrap.sh
 #    fi
