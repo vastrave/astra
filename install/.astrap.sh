@@ -1,6 +1,7 @@
 #!/bin/sh
 
-main() {
+set -e
+
    clear
 echo "
                   ██                                      .::.
@@ -78,7 +79,3 @@ echo " --> completed setup | astra"
     sudo rm -rf astra/install
     sudo rm -rf astra/scripts
 sleep 0.8
-   
-}
-
-main
