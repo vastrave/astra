@@ -1,7 +1,7 @@
  printf ' -> installing additional packages  '
 (while :; do for c in / - \\ \|; do printf '\b%s' "$c"; sleep 0.2; done; done) &
    brew update
-   brew upgrade
+#  brew upgrade
 
 brew install llvm imagemagick python3 dockx jwbargsten/misc/defbro
 pip3 install keep
