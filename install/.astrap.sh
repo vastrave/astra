@@ -75,5 +75,5 @@ echo " --> completed setup | astra"
 sleep 0.8
 
 echo
-echo " -->run astra/.tools/pkgs.sh to install recommended packages."
+echo " -->run astra.ibpkg to install recommended packages (some required)."
 echo " welcome to astra v0.0.1 :p"
