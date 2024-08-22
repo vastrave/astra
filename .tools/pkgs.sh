@@ -1,5 +1,5 @@
  printf ' -> installing additional packages  '
-(while :; do for c in / - \\ \|; do printf '%s\b' "$c"; sleep 0.2; done; done) &
+(while :; do for c in / - \\ \|; do printf '\b%s' "$c"; sleep 0.2; done; done) &
    brew update
    brew upgrade
 
