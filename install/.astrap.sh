@@ -15,9 +15,33 @@ echo "
  starting installation in 3s. ctrl-c to abort."
 sleep 3
 
-   sudo chown $USER /usr/local/bin/brew
+loc="/usr/local/bin"
 
-HOMEBREW_NO_AUTO_UPDATE=1 brew install llvm imagemagick python3 dockx jwbargsten/misc/defbro
+m1brew="/opt/homebrew"
+if [ ! -d "$m1brew" ]; then
+    echo " Installing homebrew..."
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+
+
+intbrew="/usr/local/bin/brew"
+if [ ! -d "$intbrew" ]; then
+    echo " Installing homebrew..."
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+
+       if [ ! -e /usr/local/bin ]; then
+      mkdir /usr/local/bin
+else
+      echo
+      echo " Installed homebrew."
+fi
+
+   ln -s $m1brew $loc
+   brew update
+   brew upgrade
+
+brew install llvm imagemagick python3 dockx jwbargsten/misc/defbro
 pip3 install keep
 # HOMEBREW_NO_AUTO_UPDATE=1 brew install firefox
                             
@@ -43,7 +67,7 @@ echo " --> completed setup | astra"
     sudo rm -rf astra/install
     sudo rm -rf astra/scripts
 sleep 0.8
-    sudo chown $USER /usr/local/bin/brew
+   
 }
 
 main
