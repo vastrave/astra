@@ -61,13 +61,13 @@ tmp=/tmp/astrap
 
         cd "$tmp"
 
-#     if [ "$USER" != "root" ]; then
-#     echo
-#       echo "--> astrap needs to run as root;"
-#         echo "  please enter your password if prompted."
-#           echo
-#             caffeinate -dis sudo -E sh .astrap.sh
-#    else
-#        caffeinate -dis sudo -E sh .astrap.sh
-#    fi
+     if [ "$USER" != "root" ]; then
+     echo
+       echo "--> astrap needs to run as root;"
+         echo "  please enter your password if prompted."
+           echo
+             caffeinate -dis sudo -E sh .astrap.sh
+    else
+        caffeinate -dis sudo -E sh .astrap.sh
+    fi
 
