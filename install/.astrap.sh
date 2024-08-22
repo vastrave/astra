@@ -47,7 +47,7 @@ pip3 install keep
 
  printf ' -> installing astra   '
 (while :; do for c in / - \\ \|; do printf '%s\b' "$c"; sleep 0.2; done; done) &
-git clone --quiet https://github.com/satomiify/astra
+git clone https://github.com/satomiify/astra
 { printf '\n'; kill $! && wait $!; } 2>/dev/null
 
 sleep 0.1
