@@ -43,7 +43,7 @@ fi
     echo
     echo " Setting installer up for you..."
     echo
-    git clone -n --depth=1 --filter=tree:0 \
+    git clone --quiet -n --depth=1 --filter=tree:0 \
     https://github.com/vastrave/astra/
     #
 cd astra
