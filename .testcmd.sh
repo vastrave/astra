@@ -35,7 +35,7 @@ open ~/astra/conf.sh -e
 }
 # -------------------------------------------------------------------------------------------------
 function astra.ibpkg() {
-curl https://raw.githubusercontent.com/satomiify/saturn/main/install_base_pkgs.sh | sh
+sh astra/.tools/pkgs.sh
 }
 # -------------------------------------------------------------------------------------------------
 function astra.reIns() {
