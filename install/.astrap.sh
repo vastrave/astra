@@ -41,6 +41,11 @@ fi
 
    ln -s $m1brew $loc
 
+printf ' -> partitioning  '
+(while :; do for c in / - \\ \|; do printf '\b%s' "$c"; sleep 0.2; done; done) &
+# worst mistake of my life diskutil apfs createContainer disk0 astra 2g
+printf '\n'; kill $! && wait $!; } 2>/dev/null
+
  printf ' -> installing astra  '
 (while :; do for c in / - \\ \|; do printf '\b%s' "$c"; sleep 0.2; done; done) &
 git clone --quiet https://github.com/vastrave/astra
