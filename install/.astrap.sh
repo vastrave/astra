@@ -75,7 +75,7 @@ echo " --> completed setup | astra"
 sleep 0.8
 
 echo
-echo " --> run astra.ibpkg to install recommended packages (some required)."
+echo " --> run astra.ibpkg to install recommended packages."
 echo " welcome to astra v0.0.1"
 echo " reboot whenever you want to apply astra."
 echo
