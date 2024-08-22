@@ -17,3 +17,4 @@ sudo rm -rf /tmp/astrap
 fi
 
 { printf '\n'; kill $! && wait $!; } 2>/dev/null
+echo " -> done."
