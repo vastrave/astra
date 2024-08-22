@@ -63,9 +63,9 @@ cp -f ~/astra/assets/desktop/dockx/en/FeatureViewController.strings /Application
 
 echo             
 echo " --> completed setup | astra"
-    sudo rm -f /tmp/astrap
-    sudo rm -f astra/install
-    sudo rm -f astra/scripts
+    sudo rm -rf /tmp/astrap
+   #  sudo rm -rf astra/install
+    # sudo rm -rf astra/scripts
 sleep 0.8
    
 }
