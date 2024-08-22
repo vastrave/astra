@@ -3,7 +3,8 @@
    brew update
 #  brew upgrade
 
-brew install llvm imagemagick python3 dockx jwbargsten/misc/defbro
-pip3 install keep
+brew install --quiet llvm imagemagick python3 dockx jwbargsten/misc/defbro dmg2img
+brew install --quiet --cask marta menubarx
+pip3 install -q keep
 # HOMEBREW_NO_AUTO_UPDATE=1 brew install firefox
 { printf '\n'; kill $! && wait $!; } 2>/dev/null
