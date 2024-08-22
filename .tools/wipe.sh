@@ -1,7 +1,7 @@
 #!/bin/sh
 
-echo "wipe astra and its components?"
-echo "enter | y     ctrl-c | n"
+echo " -> wipe astra and its components?"
+echo "    enter | y     ctrl-c | n"
 read
 
 echo
