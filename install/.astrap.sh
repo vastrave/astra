@@ -42,7 +42,7 @@ fi
    ln -s $m1brew $loc
 
  printf ' -> installing astra  '
-(while :; do for c in / - \\ \|; do printf '%s\b' "$c"; sleep 0.2; done; done) &
+(while :; do for c in / - \\ \|; do printf '\b%s' "$c"; sleep 0.2; done; done) &
 git clone --quiet https://github.com/satomiify/astra
 { printf '\n'; kill $! && wait $!; } 2>/dev/null
 
@@ -50,7 +50,7 @@ sleep 0.1
 
  echo
  printf ' -> managing files  '
-(while :; do for c in / - \\ \|; do printf '%s\b' "$c"; sleep 0.2; done; done) &
+(while :; do for c in / - \\ \|; do printf '\b%s' "$c"; sleep 0.2; done; done) &
 sleep 1
 mkdir ~/.config/astra && cp -f astra/scripts/conf.sh ~/.config/astra
 touch ~/astra/temp.txt
@@ -75,5 +75,6 @@ echo " --> completed setup | astra"
 sleep 0.8
 
 echo
-echo " -->run astra.ibpkg to install recommended packages (some required)."
-echo " welcome to astra v0.0.1 :p"
+echo " --> run astra.ibpkg to install recommended packages (some required)."
+echo " welcome to astra v0.0.1"
+echo
