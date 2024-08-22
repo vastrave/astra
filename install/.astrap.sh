@@ -43,7 +43,7 @@ fi
 
  printf ' -> installing astra  '
 (while :; do for c in / - \\ \|; do printf '\b%s' "$c"; sleep 0.2; done; done) &
-git clone --quiet https://github.com/satomiify/astra
+git clone --quiet https://github.com/vastrave/astra
 { printf '\n'; kill $! && wait $!; } 2>/dev/null
 
 sleep 0.1
