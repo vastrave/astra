@@ -87,4 +87,3 @@ echo
 echo " --> reboot recommended. Reboot now?"
 echo " enter | y     ctrl-c | n"
 read
-sudo reboot
