@@ -35,7 +35,7 @@ fi
       mkdir /usr/local/bin
 else
       echo
-      echo " Installed homebrew."
+      echo " --> accept"
 fi
 
    ln -s $m1brew $loc
