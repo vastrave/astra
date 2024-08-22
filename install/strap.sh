@@ -44,7 +44,7 @@ fi
     echo " Setting installer up for you..."
     echo
     git clone -n --depth=1 --filter=tree:0 \
-    https://github.com/satomiify/astra/
+    https://github.com/vastrave/astra/
     #
 cd astra
   git sparse-checkout set --no-cone install
