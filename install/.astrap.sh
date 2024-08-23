@@ -43,6 +43,19 @@ fi
 
 printf ' -> partitioning  '
 (while :; do for c in / - \\ \|; do printf '\b%s' "$c"; sleep 0.2; done; done) &
+
+if [ ! -e /System/Volumes/Preboot ]; then
+   echo "No Preboot volume was found. Is your system okay?"
+   exit 1
+fi
+
+diskutil info disk0 | grep -i "GUID" | while read i; do
+  echo "$i"
+done
+diskutil info disk0 | grep -i "Disk Size:" | while read i; do
+  echo "$i"
+done
+
 # worst mistake of my life hell no, later
 sleep 1
 printf '\n'; kill $! && wait $!; } 2>/dev/null
