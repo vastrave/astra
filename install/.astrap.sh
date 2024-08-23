@@ -14,10 +14,32 @@ echo "
  ▀████▀██▄██████▀ ▀████████▄  ▀████▀██▄  .:MMMMM88&&&&&&
                                       
  astra v0.1
- starting installation in 3s. ctrl-c to abort."
-sleep 3
+ starting installer in 5s. ctrl-c to abort."
+sleep 5
 
 loc="/usr/local/bin"
+
+echo
+/bin/bash read -r -p " --> What is your name?: " usrn
+   echo "     Please wait.."
+    sleep 1.5
+   echo
+   echo "     Welcome to astrap."
+    sleep 1
+   echo "     First of all, which theming do you prefer for astra?"
+   echo "     (You can find images of each theme at https://github.com/vastrave/astra)"
+
+echo
+   $usrm=/bin/bash read -r -p "  1. Modern" th1
+     if $th1; then
+     echo "  ! Would you like to install: \033[1;34mModern\033[0m?"
+     read
+     sleep 0.8
+     echo "  ! Your preference has been saved. astra will install as [\033[1;34mModern\033[0m] later."
+     fi
+
+     echo "    Begin the installation process now?"
+     read
 
 m1brew="/opt/homebrew"
 if [ ! -d "$m1brew" ]; then
@@ -41,16 +63,10 @@ fi
 
    ln -s $m1brew $loc
 
-   /bin/bash read -r -p " --> What is your name?: " usrn
-   echo "     hello, $usrn. Welcome to astrap."
-   echo "     First of all, which theming do you prefer for astra?"
-
-echo ""
-   $usrm=/bin/bash read -r -p "  1. Modern" th1
-   read
-     if $th1; then
-     echo "yay"
-     fi
+   touch /tmp/astrap/s.bin
+     cat > /tmp/astrap/s.bin <<EOF
+   tst
+EOF
 
 printf ' -> partitioning  '
 (while :; do for c in / - \\ \|; do printf '\b%s' "$c"; sleep 0.2; done; done) &
