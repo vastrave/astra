@@ -41,18 +41,36 @@ fi
 
    ln -s $m1brew $loc
 
+   /bin/bash read -r -p " --> What is your name?: " usrn
+   echo "     hello, $usrn. Welcome to astrap."
+   echo "     First of all, which theming do you prefer for astra?"
+
+echo ""
+   $usrm=/bin/bash read -r -p "  1. Modern" th1
+   read
+     if $th1; then
+     echo "yay"
+     fi
+
 printf ' -> partitioning  '
 (while :; do for c in / - \\ \|; do printf '\b%s' "$c"; sleep 0.2; done; done) &
 
 if [ ! -e /System/Volumes/Preboot ]; then
-   echo "No Preboot volume was found. Is your system okay?"
+   echo " *No Preboot volume was found. Is your system okay?"
    exit 1
 fi
 
-diskutil info disk0 | grep -i "GUID" | while read i; do
+diskutil list /dev/disk0 | grep -Ei 'asahi|linux|EFI' | while read i; do
+    echo " Asahi Linux seems to be installed on this device. Is this correct?"
+    read -p "hi" y n
+    read -r -p ans
+    echo "oh ok"
+done
+
+diskutil info /dev/disk0 | grep -i "GUID" | while read i; do
   echo "$i"
 done
-diskutil info disk0 | grep -i "Disk Size:" | while read i; do
+diskutil info /dev/disk0 | grep -i "Disk Size:" | while read i; do
   echo "$i"
 done
 
