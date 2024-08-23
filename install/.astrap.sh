@@ -20,7 +20,7 @@ sleep 5
 loc="/usr/local/bin"
 
 echo
-/bin/bash read -r -p " --> What is your name?: " usrn
+read -r -p " --> What is your name?: " usrn
    echo "     Please wait.."
     sleep 1.5
    echo
@@ -30,7 +30,7 @@ echo
    echo "     (You can find images of each theme at https://github.com/vastrave/astra)"
 
 echo
-   $usrm=/bin/bash read -r -p "  1. Modern" th1
+   $usrm=read -r -p "  1. Modern" th1
      if $th1; then
      echo "  ! Would you like to install: \033[1;34mModern\033[0m?"
      read
