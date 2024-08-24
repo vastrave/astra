@@ -17,7 +17,7 @@ read -r -p " --> What is your name?: " usrn
 
 echo
 # $usrm=
-   $usrm=read -r -p "  1. Modern" th1
+   read -r -p "  1. Modern" th1
      if $th1; then
      echo "  ! Would you like to install: \033[1;34mModern\033[0m?"
      # $tcd
