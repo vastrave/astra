@@ -1,7 +1,11 @@
+#!/bin/bash
+
+clear
 echo
 read -r -p " --> What is your name?: " usrn
    echo "     Please wait.."
     sleep 1.5
+    clear
    echo
    echo "     astra Interactive Pre-Installation Setup"
    sleep 2
