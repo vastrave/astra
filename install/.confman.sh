@@ -1,5 +1,3 @@
-set -e
-
 echo
 read -r -p " --> What is your name?: " usrn
    echo "     Please wait.."
