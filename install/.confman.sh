@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# mode: auto
+
 clear
 echo
 read -r -p " --> What is your name?: " usrn
