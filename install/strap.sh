@@ -56,6 +56,7 @@ mkdir /tmp/astrap
 
 tmp=/tmp/astrap
 
+     cp -f astra/install/.confman.sh "$tmp"
      cp -f astra/install/.astrap.sh "$tmp"
      rm -rf astra
 
