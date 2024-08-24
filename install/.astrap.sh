@@ -18,28 +18,50 @@ echo "
 sleep 5
 
 loc="/usr/local/bin"
+tmp="/tmp/astrap"
 
+# from
 echo
-read -r -p " --> What is your name?: " usrn
-   echo "     Please wait.."
-    sleep 1.5
-   echo
-   echo "     Welcome to astrap."
-    sleep 1
-   echo "     First of all, which theming do you prefer for astra?"
-   echo "     (You can find images of each theme at https://github.com/vastrave/astra)"
+echo "   Modern"
+sleep 0.2
+echo "   AMD"
+sleep 0.2
+echo "   EN"
+echo "[ OK ] Got config"
+#
+sleep 0.1
 
-echo
-   $usrm=read -r -p "  1. Modern" th1
-     if $th1; then
-     echo "  ! Would you like to install: \033[1;34mModern\033[0m?"
-     $tcd=read
-     sleep 0.8
-     echo "  ! Your preference has been saved. astra will install as [\033[1;34mModern\033[0m] later."
-     fi
+if [ ! -e /System/Volumes/Update ]; then
+   echo " *Could not find /System/Volumes/Update"
+   exit 1
+fi
+echo "[ OK ] Check /System/Volumes/Update"
+sleep 0.07
 
-     echo "    Begin the installation process now?"
-     read
+echo "[ OK ] Check strap.sh"
+sleep 0.07
+echo "[ OK ] No errors found"
+sleep 0.2
+echo "[ OK ] Check bootstrapper version"
+sleep 0.05
+
+if [ -e $tmp/strap.sh ]; then
+   echo " *Unintended strap file found."
+   echo " strap.sh should be deleted by now. Run rm -rf /tmp/astrap and restart installation."
+   echo " If this has happened multiple times, report it."
+   exit 1
+fi
+echo "[ OK ] Check strap.sh"
+sleep 0.07
+
+if [ -e $tmp/.confman.sh ]; then
+   echo " *Unintended/misplaced config file found."
+   echo " .confman.sh should be deleted by now. Run rm -rf /tmp/astrap and restart installation."
+   echo " If this has happened multiple times, report it."
+   exit 1
+fi
+echo "[ OK ] Check .confman.sh"
+sleep 0.07
 
 m1brew="/opt/homebrew"
 if [ ! -d "$m1brew" ]; then
