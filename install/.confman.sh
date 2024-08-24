@@ -21,7 +21,7 @@ echo
      if $th1; then
      echo "  ! Would you like to install: \033[1;34mModern\033[0m?"
      # $tcd
-     $tcd=read
+     read
      sleep 0.8
      echo "  ! Your preference has been saved. astra will install as [\033[1;34mModern\033[0m] later."
      fi
@@ -34,11 +34,11 @@ echo
 
    echo
    # $usrg
-   $usrg=read -r -p "  1. AMD" gc1
+   read -r -p "  1. AMD" gc1
      if $gc1; then
      echo "  ! Is this correct?: \033[0;31mAMD\033[0m"
      # $gcd
-     $gcd=read
+     read
      sleep 0.8
      echo "    Understood. Saved graphics card as \033[0;31mAMD\033[0m."
      fi
@@ -51,11 +51,11 @@ echo
 
    echo
    # $usrl=
-   $usrl=read -r -p "  1. English" lg1
+   read -r -p "  1. English" lg1
      if $lg1; then
      echo "  ! So, install astra in English?"
      # $lcd=
-     $lcd=read
+     read
      sleep 0.8
      echo "    Understood. astra will be installed in English."
      fi
