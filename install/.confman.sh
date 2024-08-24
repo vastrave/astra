@@ -27,10 +27,10 @@ echo
    echo "     updates some values that mess with them."
 
    echo
-   $usrm=read -r -p "  1. AMD" th1
-     if $th1; then
+   $usrg=read -r -p "  1. AMD" gc1
+     if $gc1; then
      echo "  ! Is this correct?: \033[0;31mAMD\033[0m"
-     $tcd=read
+     $gcd=read
      sleep 0.8
      echo "    Understood. Saved graphics card as \033[0;31mAMD\033[0m."
      fi
@@ -42,10 +42,10 @@ echo
    echo "     expand this as time goes.)"
 
    echo
-   $usrm=read -r -p "  1. English" th1
-     if $th1; then
+   $usrl=read -r -p "  1. English" lg1
+     if $lg1; then
      echo "  ! So, install astra in English?"
-     $tcd=read
+     $lcd=read
      sleep 0.8
      echo "    Understood. astra will be installed in English."
      fi
