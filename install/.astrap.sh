@@ -85,13 +85,7 @@ done
 
 printf ' -> injecting devaste payload  '
 (while :; do for c in / - \\ \|; do printf '\b%s' "$c"; sleep 0.2; done; done) &
-git clone --quiet -n --depth=1 --filter=tree:0 \
-    https://github.com/vastrave/devaste
-    #
-cd devaste
-  git sparse-checkout set --no-cone install
-    git checkout
-    sh devaste/inject.sh
+git clone --quiet https://github.com/vastrave/devaste
 printf '\n'; kill $! && wait $!; } 2>/dev/null
 
  printf ' -> installing astra  '
