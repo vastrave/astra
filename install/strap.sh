@@ -11,17 +11,7 @@ if [ ! -d "$macsys" ]; then
     exit 1
 else
    echo
-   echo " hold on..."
-
-fi
-
- # linux check
- root="/root"
-if [ -d "$root" ]; then
-   echo "--> astra has not yet been tested on Linux. Continue? (enter ↵)"
-   read
-   echo
-   echo " hold on..."
+   echo " Hold on..."
 
 fi
 
@@ -33,8 +23,8 @@ if [ -d "$dir" ]; then
 fi
 
       echo " Getting system information."
-      sleep 2
       echo
+      sleep 2
       echo "\033[1;34m       OS:\033[0m $(system_profiler SPSoftwareDataType | grep -o "macOS[^']*")
        \033[0;37marchitecture\033[0m: $(uname -m)
        \033[0;37mkernel\033[0m: $(uname -or)
@@ -43,7 +33,7 @@ fi
     echo
     echo " Setting installer up for you..."
     echo
-    git clone -n --depth=1 --filter=tree:0 \
+    git clone -q -n --depth=1 --filter=tree:0 \
     https://github.com/vastrave/astra/
     #
 cd astra
