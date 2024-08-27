@@ -6,11 +6,12 @@ echo " -> wipe astra and its components?"
 echo "    enter | y     ctrl-c | n"
 read
 
+cd
 echo
  printf ' -> wiping astra  '
 (while :; do for c in / - \\ \|; do printf '\b%s' "$c"; sleep 0.2; done; done) &
 
-if [ ! -e ~/astra ]; then
+if [ ! -e astra ]; then
       echo
       echo " Exiting with error:"
       echo "  *Could not find the astra folder. Did you move it?"
@@ -19,7 +20,7 @@ else
       echo
 fi
 
-if [ ! -e ~/saturn ]; then
+if [ ! -e astra/saturn ]; then
       echo
       echo " Exiting with error:"
       echo "  *Could not find the saturn folder. Did you move it?"
@@ -28,7 +29,7 @@ else
       echo 
 fi
 
-if [ ! -e ~/.config/astra ]; then
+if [ ! -e .config/astra ]; then
       echo
       echo " Exiting with error:"
       echo "  *Could not find the astra configuration folder. Did you move it?"
@@ -36,9 +37,9 @@ else
       echo 
 fi
 
-sudo rm -rf ~/astra
-sudo rm -rf ~/saturn
-sudo rm -rf ~/.config/astra
+sudo rm -rf astra
+sudo rm -rf astra/saturn
+sudo rm -rf config/astra
 
 tmp="/tmp/astrap"
 if [ ! -d "$tmp" ]; then
