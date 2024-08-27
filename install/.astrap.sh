@@ -124,10 +124,11 @@ EOF
 echo "source ~/astra/.testcmd.sh" >> ~/.zshrc
 chmod +x ~/astra/.testcmd.sh
 
+if [ -e /Applications/DockX.app ]; then
 cp -f ~/astra/assets/desktop/dockx/base/FeatureViewController.nib /Applications/DockX.app/Contents/Resources/Base.lproj/FeatureViewController.nib
 cp -f ~/astra/assets/desktop/dockx/en/Localizable.strings /Applications/DockX.app/Contents/Resources/en.lproj/Localizable.strings
 cp -f ~/astra/assets/desktop/dockx/en/FeatureViewController.strings /Applications/DockX.app/Contents/Resources/en.lproj/FeatureViewController.strings
-
+fi
 { printf '\n'; kill $! && wait $!; } 2>/dev/null
 
 echo             
