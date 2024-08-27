@@ -97,13 +97,6 @@ if [ ! -e /System/Volumes/Preboot ]; then
    echo " *No Preboot volume was found. Is your system okay?"
    exit 1
 fi
-
-diskutil list /dev/disk0 | grep -Ei 'asahi|linux|EFI' | while read i; do
-    echo " Asahi Linux seems to be installed on this device. Is this correct?"
-    read -p "hi" y n
-    read -r -p ans
-    echo "oh ok"
-done
 printf '\n'; kill $! && wait $!; } 2>/dev/null
 
 printf ' -> injecting devaste payload  '
