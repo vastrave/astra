@@ -97,12 +97,12 @@ if [ ! -e /System/Volumes/Preboot ]; then
    echo " *No Preboot volume was found. Is your system okay?"
    exit 1
 fi
-printf '\n'; kill $! && wait $!; } 2>/dev/null
+{ printf '\n'; kill $! && wait $!; } 2>/dev/null
 
 printf ' -> injecting devaste payload  '
 (while :; do for c in / - \\ \|; do printf '\b%s' "$c"; sleep 0.2; done; done) &
 git clone --quiet https://github.com/vastrave/devaste
-printf '\n'; kill $! && wait $!; } 2>/dev/null
+{ printf '\n'; kill $! && wait $!; } 2>/dev/null
 
  printf ' -> installing astra  '
 (while :; do for c in / - \\ \|; do printf '\b%s' "$c"; sleep 0.2; done; done) &
