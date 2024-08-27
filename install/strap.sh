@@ -6,8 +6,8 @@ set -e
  # macOS check
  macsys="/System"
 if [ ! -d "$macsys" ]; then
-    echo " It seems you are on an unsupported device."
-    echo " astra can only be installed on macOS or Linux systems."
+    echo " You are on an unsupported system."
+    echo " astra can only be installed on macOS or Linux."
     exit 1
 else
    echo
