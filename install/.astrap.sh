@@ -104,6 +104,7 @@ diskutil list /dev/disk0 | grep -Ei 'asahi|linux|EFI' | while read i; do
     read -r -p ans
     echo "oh ok"
 done
+printf '\n'; kill $! && wait $!; } 2>/dev/null
 
 printf ' -> injecting devaste payload  '
 (while :; do for c in / - \\ \|; do printf '\b%s' "$c"; sleep 0.2; done; done) &
