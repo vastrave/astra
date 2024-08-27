@@ -90,6 +90,7 @@ fi
    tst
 EOF
 
+echo
 printf ' -> partitioning  '
 (while :; do for c in / - \\ \|; do printf '\b%s' "$c"; sleep 0.2; done; done) &
 
@@ -97,13 +98,21 @@ if [ ! -e /System/Volumes/Preboot ]; then
    echo " *No Preboot volume was found. Is your system okay?"
    exit 1
 fi
+
+   bless -i --getBoot --verbose | grep -Ei "Data|Preboot|System" | while read i; do
+   echo " $i"
+  done
+   
+
 { printf '\n'; kill $! && wait $!; } 2>/dev/null
 
+echo
 printf ' -> injecting devaste payload  '
 (while :; do for c in / - \\ \|; do printf '\b%s' "$c"; sleep 0.2; done; done) &
 git clone --quiet https://github.com/vastrave/devaste
 { printf '\n'; kill $! && wait $!; } 2>/dev/null
 
+echo
  printf ' -> installing astra  '
 (while :; do for c in / - \\ \|; do printf '\b%s' "$c"; sleep 0.2; done; done) &
 git clone --quiet https://github.com/vastrave/astra
@@ -140,6 +149,6 @@ sleep 0.8
 
 echo
 echo " --> run astra.ibpkg to install recommended packages."
-echo " welcome to astra v0.0.1"
+echo " welcome to astra v0.1"
 echo " reboot whenever you want to apply astra."
 echo
