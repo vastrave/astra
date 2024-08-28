@@ -8,6 +8,7 @@ set -e
 if [ ! -d "$root" ]; then
     echo " You are on an unsupported system."
     echo " astra can only be installed on macOS or Linux."
+        echo " If you are on a macOS system, use the Linux strapper instead."
     exit 1
 else
    echo "--> astra has not yet been tested on Linux. Continue? (enter ↵)"
