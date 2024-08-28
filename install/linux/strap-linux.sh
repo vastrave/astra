@@ -48,8 +48,8 @@ mkdir /tmp/astrap
 
 tmp=/tmp/astrap
 
-     cp -f astra/install/.confman.sh "$tmp"
-     cp -f astra/install/.astrap.sh "$tmp"
+     cp -f astra/install/linux/.confman-lx.sh "$tmp"
+     cp -f astra/install/linux/.astrap-linux.sh "$tmp"
      rm -rf astra
 
         cd "$tmp"
