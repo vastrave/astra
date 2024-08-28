@@ -8,6 +8,7 @@ set -e
 if [ ! -d "$macsys" ]; then
     echo " You are on an unsupported system."
     echo " astra can only be installed on macOS or Linux."
+    echo " If you are on a Linux system, use the Linux strapper instead."
     exit 1
 else
    echo
