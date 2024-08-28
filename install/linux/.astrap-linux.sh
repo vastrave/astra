@@ -78,8 +78,6 @@ else
       echo " --> accept"
 fi
 
-   ln -s $m1brew $loc
-
    touch /tmp/astrap/s.bin
      cat > /tmp/astrap/s.bin <<EOF
    tst
