@@ -54,7 +54,7 @@ fi
 echo "[ OK ] Check strap.sh"
 sleep 0.07
 
-if [ ! -e $tmp/.confman.sh ]; then
+if [ ! -e $tmp/.confman-lx.sh ]; then
    echo " *Missing config file (.confman-lx.sh)."
    echo " .confman-lx.sh could not be found. Run rm -rf /tmp/astrap and restart installation."
    echo " If this has happened multiple times, report it."
