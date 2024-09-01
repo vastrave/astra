@@ -40,7 +40,7 @@ fi
     https://github.com/vastrave/astra/
     #
 cd astra
-  git sparse-checkout set --no-cone linux
+  git sparse-checkout set --no-cone nixos
     git checkout
 
     cd
@@ -60,9 +60,9 @@ tmp=/tmp/astrap
        echo "--> astrap needs to run as root;"
          echo "  please enter your password if prompted."
            echo
-             systemd-inhibit sudo -E sh .confman-lx.sh
+             systemd-inhibit sudo -E sh .confman-nix.sh
     else
-        systemd-inhibit sudo -E sh .confman-lx.sh
+        systemd-inhibit sudo -E sh .confman-nix.sh
     fi
 
 
