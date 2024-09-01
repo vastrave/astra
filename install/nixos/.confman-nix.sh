@@ -77,7 +77,7 @@ echo
        echo "--> astrap needs to run as root;"
          echo "  please enter your password if prompted."
            echo
-             systemd-inhibit sudo -E sh .astrap-linux.sh
+             systemd-inhibit sudo -E sh .astrap-nix.sh
     else
-        systemd-inhibit sudo -E sh .astrap-linux.sh
+        systemd-inhibit sudo -E sh .astrap-nix.sh
     fi
